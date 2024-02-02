@@ -1,12 +1,12 @@
 "use strict";
 
 function isEnoughCapacity(products, containerSize) {
-  const totalQuantity = Object.values(products).reduce(
-    (total, quantity) => total + quantity,
+  const totalNumber = Object.values(products).reduce(
+    (total, number) => total + number,
     0
   );
 
-  return totalQuantity <= containerSize;
+  return totalNumber <= containerSize;
 }
 
 console.log(isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 8)); // true
